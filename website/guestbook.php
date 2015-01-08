@@ -56,6 +56,7 @@ $guestbook = Guestbook::get_all_guestbooks();
 
 Please note this page is monitored by administration for malicious activity
 
+
 </div>
 <?php
    our_footer();
