@@ -1,46 +1,6 @@
+Thanks go to Adam Doupe for the creation of the original version WackoPicko
 
-WackoPicko is a website that contains known vulnerabilities. It was first used for the paper [Why Johnny Can't Pentest: An Analysis of Black-box Web Vulnerability Scanners](http://cs.ucsb.edu/~adoupe/static/black-box-scanners-dimva2010.pdf)
-
-## Virtual Machine
-
-WackoPicko is now included as an application in the [OWASP Broken Web Applications Project](https://www.owasp.org/index.php/OWASP_Broken_Web_Applications_Project#tab=Main) which is a Virtual Machine with numerous intentionally vulnerable application.
-
-## External Links/Help
-* [WackoPicko on aldeid](http://www.aldeid.com/wiki/WackoPicko), a security wiki.
-
-## Install From Source 
-
-First, ensure that short_open_tag PHP ini option is enabled:
-
-http://www.php.net/manual/en/ini.core.php#ini.short-open-tag
-
-Import the WackoPicko database into MySQL using a command like the following:  
-  mysql -u <user> -p < current.sql
-  
-This will create the MySQL user wackopicko with the password webvuln!@# as well as create the wackopicko table.
-
-The wackopicko table contains all of the data that was present while testing the scanners in [Why Johnny Can't Pentest](http://cs.ucsb.edu/~adoupe/static/black-box-scanners-dimva2010.pdf).
-
-The final step is to enable read/write access to the upload directory of WackoPicko for the webserver user. An easy way to do this is:  
-  chmod 777 -R upload
-
-## Valid Logins
-
-### Regular users
-* scanner1/scanner1
-* scanner2/scanner2
-* bryce/bryce
-
-### Administrator users
-* admin/admin
-* adamd/adamd
-
-## Known Issues
-* The search bar doesn't appear in Internet Explorer.
-* There are some onions hanging around (particularly in the upload folder) but I kept them there to preserve parity with the version used during the tests.
-* WackoPicko was developed with the assumption that is was running as the root application as the URL and won't work running as a directory.
-* WackoPicko uses PHP's short tags, they must be enabled to run the application.
-
+https://github.com/adamdoupe
 ## Vulnerabilities
 
 * Reflected XSS  
