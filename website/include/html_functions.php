@@ -14,12 +14,12 @@ function our_header($selected = "", $search_terms = "")
     <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print"> 
     <!--[if IE]><link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
     <link rel="stylesheet" href="/css/stylings.css" type="text/css" media="screen">
-    <title>thisisdefinitelynotPwC.com</title>
+    <title>rocksolid.com</title>
   </head>
   <body>
     <div class="container " style="border: 2px solid #5c95cf;">
       <div class="column span-24 first last">
-	<h1 id="title"><a href="/">thisisdefinitelynotPwC.com</a></h1>
+	<h1 id="title"><a href="/">rocksolid.com</a></h1>
       </div>
       <div id="menu">
 	<div class="column prepend-1 span-14 first">
@@ -77,7 +77,7 @@ function our_footer()
 	<ul>
 	  <li><a href="/">Home</a> |</li>
           <li><a href="/admin/index.php?page=login">Admin</a> |</li>
-	  <li><a href="mailto:contact@wackopicko.com">Contact</a> |</li>
+	  <li><a href="mailto:contact@rocksolid.com">Contact</a> |</li>
 	  <li><a href="/tos.php">Terms of Service</a></li>
 	</ul>
       </div>

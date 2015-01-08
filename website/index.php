@@ -8,11 +8,11 @@ require_once("include/html_functions.php");
 
 
 <div class="column prepend-1 span-24 first last">
-  <h2>Welcome to WackoPicko</h2>
+  <h2>Welcome to rocksolid</h2>
   <p>
-    On WackoPicko, you can share all your crazy pics with your friends. <br />
+    On rocksolid, you can share all your crazy pics with your friends. <br />
     But that's not all, you can also buy the rights to the high quality <br />
-    version of someone's pictures. WackoPicko is fun for the whole family.
+    version of someone's pictures. rocksolid is fun for the whole family.
   </p>
 
   <h3>New Here?</h3>
@@ -26,7 +26,7 @@ require_once("include/html_functions.php");
     <h4><a href="/calendar.php">What is going on today?</a></h4>
   </p>
   <p>
-    <h4>Or you can test to see if WackoPicko can handle a file:</h4> <br />
+    <h4>Or you can test to see if rocksolid can handle a file:</h4> <br />
   <script>
     document.write('<form enctype="multipart/form-data" action="/pic' + 'check' + '.php" method="POST"><input type="hidden" name="MAX_FILE_SIZE" value="30000" />Check this file: <input name="userfile" type="file" /> <br />With this name: <input name="name" type="text" /> <br /> <br /><input type="submit" value="Send File" /><br /> </form>');
   </script>

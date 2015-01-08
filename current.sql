@@ -1,6 +1,6 @@
 -- MySQL dump 10.11
 --
--- Host: localhost    Database: wackopicko
+-- Host: localhost    Database: rocksolid
 -- ------------------------------------------------------
 -- Server version	5.0.67-0ubuntu6
 
@@ -15,20 +15,20 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-CREATE DATABASE `wackopicko` ;
+CREATE DATABASE `rocksolid` ;
 
-CREATE USER 'wackopicko'@'%' IDENTIFIED BY 'webvuln!@#';
+CREATE USER 'rocksolid'@'%' IDENTIFIED BY 'carl10';
 
-GRANT USAGE ON * . * TO 'wackopicko'@'%' IDENTIFIED BY 'webvuln!@#' WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0 ;
+GRANT USAGE ON * . * TO 'rocksolid'@'%' IDENTIFIED BY 'carl10' WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0 ;
 
-GRANT SELECT , INSERT , UPDATE , DELETE , CREATE , DROP , INDEX , ALTER , CREATE TEMPORARY TABLES , CREATE VIEW , SHOW VIEW , CREATE ROUTINE, ALTER ROUTINE, EXECUTE ON `wackopicko` . * TO 'wackopicko'@'%';
+GRANT SELECT , INSERT , UPDATE , DELETE , CREATE , DROP , INDEX , ALTER , CREATE TEMPORARY TABLES , CREATE VIEW , SHOW VIEW , CREATE ROUTINE, ALTER ROUTINE, EXECUTE ON `rocksolid` . * TO 'rocksolid'@'%';
 
 
 --
 -- Table structure for table `admin`
 --
 
-USE `wackopicko`;
+USE `rocksolid`;
 
 DROP TABLE IF EXISTS `admin`;
 SET @saved_cs_client     = @@character_set_client;
