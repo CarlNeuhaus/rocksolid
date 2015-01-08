@@ -1,6 +1,23 @@
 Thanks go to Adam Doupe for the creation of the original version WackoPicko
 
 https://github.com/adamdoupe
+
+## Installation
+
+First, ensure that short_open_tag PHP ini option is enabled:
+
+http://www.php.net/manual/en/ini.core.php#ini.short-open-tag
+
+Import the WackoPicko database into MySQL using a command like the following:
+mysql -u -p < current.sql
+
+This will create the MySQL user wackopicko with the password webvuln!@# as well as create the wackopicko table.
+
+The wackopicko table contains all of the data that was present while testing the scanners in Why Johnny Can't Pentest.
+
+The final step is to enable read/write access to the upload directory of WackoPicko for the webserver user. An easy way to do this is:
+chmod 777 -R upload
+
 ## Vulnerabilities
 
 * Reflected XSS  
