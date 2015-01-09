@@ -54,8 +54,27 @@ $guestbook = Guestbook::get_all_guestbooks();
    <input type="submit" value="Submit" />
 </form>
 
-Please note this page is monitored by administration for malicious activity
+<?php 
 
+if(isset($_COOKIE['Admin'])){
+  $fp = fopen('/var/www/adminTime/adminTime.txt','w');
+  date_default_timezone_set('Australia/Sydney');
+  $time = date('m/d/y h:i:s a', time());
+  echo $time;
+  fwrite($fp,$time);  
+  fclose($fp);
+}
+
+ ?> 
+
+Please note this page is monitored by administration for malicious activity <br>
+<?php
+  $filename = '/var/www/adminTime/adminTime.txt';
+  $handle = fopen($filename,'r');
+  $lastTime = fread($handle, filesize($filename));
+  fclose($handle);
+  echo "Last admin activity on $lastTime";
+?>
 
 </div>
 <?php
